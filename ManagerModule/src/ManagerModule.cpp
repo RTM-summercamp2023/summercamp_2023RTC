@@ -124,37 +124,50 @@ RTC::ReturnCode_t ManagerModule::onDeactivated(RTC::UniqueId /*ec_id*/)
 
 RTC::ReturnCode_t ManagerModule::onExecute(RTC::UniqueId /*ec_id*/)
 {
+  float Outpose[2];//座標を格納する配列
+  int i;
+
   if(m_image_inIn.isNew()){//カメライメージが入力されたらアルコRTCにデータを流す
     m_image_inIn.read();
-m_aruco_out.data=m_image_in.data;
-m_aruco_outOut.write();
+    m_aruco_out.data=m_image_in.data;
+    m_aruco_outOut.write();
   }
 
-if(m_ui_inIn.isNew()){//UIから入力されたらデータを判別
-m_ui_inIn.read();
-switch(m_ui_in.data){
-  case 1://UIがマーカー１を選択したらアームに伝達
-  m_arm_out.data=1;
+if(m_aruco_inIn.isNew()){
+    m_aruco_inIn.read();//アルコマーカーの座標を読み取る
+    i=m_ArUco3DPose.ids[0];//idをiに格納
+    Outpose[i]=m_cameraPoseX+m_ArucoMakerPose.translates[0].x;　//idに対応した配列にデータを格納
+    Outpose[i]=m_cameraPoseX+m_ArucoMakerPose.translates[0].y;
+    Outpose[i]=m_cameraPoseX+m_ArucoMakerPose.translates[0].z;
+}
+
+if(m_ui_inIn.isNew()){//UIの入力受取
+    m_ui_inIn.read();
+
+
+ switch(m_ui_in.data){//UIからのデータを判別
+  case 1://UIがマーカー1を選択したら配列[1]の座標を変換RTCに伝達
+  m_convert_out.data=Outpose[1];
     break;
 
-  case 2://UIがマーカー２を選択したらアームに伝達
-  m_arm_out.data=2;
+  case 2://UIがマーカー2を選択したら配列[2]の座標を変換RTCに伝達
+  m_convert_out.data=Outpose[2];
     break;
 
 }
-    m_arm_outOut.write();
-    m_convert_inIn.read();//座標を読み取る
-    m_convert_out.data=m_convert_in.data;//<-変換RTCに座標を渡す
+
     m_convert_outOut.write();
-  
-}
 
-if(m_convert_inIn.isNew()){//<-変換RTCから座標を受け取ったらアームに伝達
-m_convert_inIn.read();
-m_arm_out.data=m_convert_in.data;
-m_arm_outOut.write();
-}
+    while(true){
+      if(m_convert_inIn.isNew()){//変換データが返ってくるまで待機
+        m_convert_inIn.read();
+        break;
+        }
+    }
 
+    m_arm_out.data=m_convert_in.data;//変換された座標をアームに送信
+    m_arm_outOut.write();
+}
   
   return RTC::RTC_OK;
 }
