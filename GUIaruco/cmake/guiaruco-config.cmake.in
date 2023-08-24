@@ -1,0 +1,54 @@
+# GUIaruco CMake config file
+#
+# This file sets the following variables:
+# GUIaruco_FOUND - Always TRUE.
+# GUIaruco_INCLUDE_DIRS - Directories containing the GUIaruco include files.
+# GUIaruco_IDL_DIRS - Directories containing the GUIaruco IDL files.
+# GUIaruco_LIBRARIES - Libraries needed to use GUIaruco.
+# GUIaruco_DEFINITIONS - Compiler flags for GUIaruco.
+# GUIaruco_VERSION - The version of GUIaruco found.
+# GUIaruco_VERSION_MAJOR - The major version of GUIaruco found.
+# GUIaruco_VERSION_MINOR - The minor version of GUIaruco found.
+# GUIaruco_VERSION_REVISION - The revision version of GUIaruco found.
+# GUIaruco_VERSION_CANDIDATE - The candidate version of GUIaruco found.
+
+message(STATUS "Found GUIaruco-@PROJECT_VERSION@")
+set(GUIaruco_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(GUIaruco_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(GUIaruco_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(GUIaruco_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(GUIaruco_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(GUIaruco_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(GUIaruco_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(GUIaruco_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(GUIaruco_VERSION @PROJECT_VERSION@)
+set(GUIaruco_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(GUIaruco_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(GUIaruco_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(GUIaruco_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+
