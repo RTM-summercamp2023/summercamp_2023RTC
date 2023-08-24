@@ -1,0 +1,3 @@
+[submodule "myCobotRTC"]
+	path = myCobotRTC
+	url = https://github.com/Nobu19800/myCobotRTC
