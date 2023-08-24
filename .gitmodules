@@ -1,3 +1,7 @@
 [submodule "myCobotRTC"]
 	path = myCobotRTC
 	url = https://github.com/Nobu19800/myCobotRTC
+
+[submodule "SingleArUco2"]
+	path = SingleArUco2
+	url = https://github.com/rsdlab/SingleArUco2.git
