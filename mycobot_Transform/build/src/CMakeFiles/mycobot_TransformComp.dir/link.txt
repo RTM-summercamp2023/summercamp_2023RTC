@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/mycobot_TransformComp.dir/mycobot_TransformComp.cpp.o CMakeFiles/mycobot_TransformComp.dir/mycobot_Transform.cpp.o CMakeFiles/mycobot_TransformComp.dir/__/idl/ArUcoSkel.cpp.o  -o mycobot_TransformComp  -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 
