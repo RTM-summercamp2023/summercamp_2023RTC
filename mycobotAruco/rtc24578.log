@@ -1,0 +1,51 @@
+2023-08-24 13:58:25,095 file.manager INFO 2.0.1
+2023-08-24 13:58:25,095 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 13:58:25,095 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-08-24 13:58:25,096 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 13:58:25,096 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-08-24 13:58:25,096 file.manager INFO   All right reserved.
+2023-08-24 13:58:25,096 file.manager INFO Manager starting.
+2023-08-24 13:58:25,096 file.manager INFO Starting local logging.
+2023-08-24 13:58:25,097 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2023-08-24 13:58:25,102 file.ManagerServant INFO Master manager not found
+2023-08-24 13:58:25,103 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-08-24 13:58:25,106 file.manager INFO Component type conf file: myCobotAruco.conf loaded.
+2023-08-24 13:58:25,108 file.ec_base INFO setRate(1000000.000000) done
+2023-08-24 13:58:25,108 file.ec_base INFO setRate(1000.000000) done
+2023-08-24 13:58:25,108 file.rtobject INFO 1 execution context was created.
+2023-08-24 13:58:25,110 file.rtobject INFO Initial active configuration set is default.
+2023-08-24 13:58:35,148 file.ManagerServant INFO Master manager not found
+2023-08-24 13:58:45,186 file.ManagerServant INFO Master manager not found
+2023-08-24 13:58:55,226 file.ManagerServant INFO Master manager not found
+2023-08-24 13:58:56,293 file.rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/DataFlowComponentBase.py", line 123, in on_execute
+    ret = self.onExecute(ec_id)
+  File "myCobotAruco.py", line 217, in onExecute
+    ret=middle.moveLinearCartesianAbs(JARA_ARM.CarPosWithElbow([[1, 0, 0, poseX], [0, 1, 0, poseY], [0, 0, 1, poseZ]], 0,  0))
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/RTM_IDL/ManipulatorCommonInterface_Middle_idl.py", line 168, in moveLinearCartesianAbs
+    return self._obj.invoke("moveLinearCartesianAbs", _0_JARA_ARM.ManipulatorCommonInterface_Middle._d_moveLinearCartesianAbs, args)
+omniORB.CORBA._omni_sys_exc: CORBA.UNKNOWN(omniORB.UNKNOWN_PythonException, CORBA.COMPLETED_MAYBE)
+
+2023-08-24 13:59:05,262 file.ManagerServant INFO Master manager not found
+2023-08-24 13:59:15,296 file.ManagerServant INFO Master manager not found
+2023-08-24 13:59:25,327 file.ManagerServant INFO Master manager not found
+2023-08-24 13:59:35,359 file.ManagerServant INFO Master manager not found
+2023-08-24 13:59:45,392 file.ManagerServant INFO Master manager not found
+2023-08-24 13:59:55,426 file.ManagerServant INFO Master manager not found
+2023-08-24 14:00:05,456 file.ManagerServant INFO Master manager not found
+2023-08-24 14:00:15,488 file.ManagerServant INFO Master manager not found
+2023-08-24 14:00:25,521 file.ManagerServant INFO Master manager not found
+2023-08-24 14:00:35,554 file.ManagerServant INFO Master manager not found
+2023-08-24 14:00:45,591 file.ManagerServant INFO Master manager not found
+2023-08-24 14:00:55,624 file.ManagerServant INFO Master manager not found
+2023-08-24 14:01:05,656 file.ManagerServant INFO Master manager not found
+2023-08-24 14:01:15,689 file.ManagerServant INFO Master manager not found
+2023-08-24 14:01:25,720 file.ManagerServant INFO Master manager not found
+2023-08-24 14:01:35,755 file.ManagerServant INFO Master manager not found
+2023-08-24 14:01:45,785 file.ManagerServant INFO Master manager not found
+2023-08-24 14:01:55,818 file.ManagerServant INFO Master manager not found
+2023-08-24 14:02:05,854 file.ManagerServant INFO Master manager not found
+2023-08-24 14:02:15,886 file.ManagerServant INFO Master manager not found
+2023-08-24 14:02:25,927 file.ManagerServant INFO Master manager not found
+2023-08-24 14:02:35,962 file.ManagerServant INFO Master manager not found
+2023-08-24 14:02:45,993 file.ManagerServant INFO Master manager not found

@@ -1,0 +1,35 @@
+2023-08-24 14:27:15,534 file.manager INFO 2.0.1
+2023-08-24 14:27:15,534 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 14:27:15,534 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-08-24 14:27:15,534 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 14:27:15,535 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-08-24 14:27:15,535 file.manager INFO   All right reserved.
+2023-08-24 14:27:15,535 file.manager INFO Manager starting.
+2023-08-24 14:27:15,535 file.manager INFO Starting local logging.
+2023-08-24 14:27:15,537 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2023-08-24 14:27:15,541 file.ManagerServant INFO Master manager not found
+2023-08-24 14:27:15,543 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-08-24 14:27:15,547 file.manager INFO Component type conf file: myCobotAruco.conf loaded.
+2023-08-24 14:27:15,548 file.ec_base INFO setRate(1000000.000000) done
+2023-08-24 14:27:15,549 file.ec_base INFO setRate(1000.000000) done
+2023-08-24 14:27:15,549 file.rtobject INFO 1 execution context was created.
+2023-08-24 14:27:15,553 file.rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/RTObject.py", line 1168, in on_initialize
+    ret = self.onInitialize()
+  File "myCobotAruco.py", line 122, in onInitialize
+    ret=middle.moveLinearCartesianAbs(JARA_ARM.CarPosWithElbow([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0]], 0,  0))
+AttributeError: 'NoneType' object has no attribute 'moveLinearCartesianAbs'
+
+2023-08-24 14:27:15,553 file.rtobject INFO Initial active configuration set is default.
+2023-08-24 14:27:15,553 file.rtobject ERROR on_initialize() failed.
+2023-08-24 14:27:15,554 file.ec_worker WARNING ExecutionContext is already stopped.
+2023-08-24 14:27:15,554 file.ec_base ERROR Invoking on_shutdown() for each RTC failed.
+2023-08-24 14:27:16,563 file.manager.namingoncorba ERROR Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/NamingManager.py", line 231, in unbindObject
+    self._cosnaming.unbind(name)
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/CorbaNaming.py", line 604, in unbind
+    self._rootContext.unbind(name_)
+  File "/usr/lib/python3/dist-packages/CosNaming_idl.py", line 242, in unbind
+    return self._obj.invoke("unbind", _0_CosNaming.NamingContext._d_unbind, args)
+CosNaming.NamingContext.NotFound: CosNaming.NamingContext.NotFound(why=missing_node, rest_of_name=[CosNaming.NameComponent(id='myCobotAruco0', kind='rtc')])
+

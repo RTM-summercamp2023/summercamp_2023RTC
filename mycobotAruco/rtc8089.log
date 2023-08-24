@@ -1,0 +1,28 @@
+2023-08-24 10:12:34,099 file.manager INFO 2.0.1
+2023-08-24 10:12:34,099 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 10:12:34,099 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-08-24 10:12:34,099 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 10:12:34,100 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-08-24 10:12:34,100 file.manager INFO   All right reserved.
+2023-08-24 10:12:34,100 file.manager INFO Manager starting.
+2023-08-24 10:12:34,100 file.manager INFO Starting local logging.
+2023-08-24 10:12:34,102 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2023-08-24 10:12:34,106 file.ManagerServant INFO Master manager not found
+2023-08-24 10:12:34,107 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-08-24 10:12:34,111 file.manager INFO Component type conf file: myCobotAruco.conf loaded.
+2023-08-24 10:12:34,113 file.ec_base INFO setRate(1000000.000000) done
+2023-08-24 10:12:34,113 file.ec_base INFO setRate(1000.000000) done
+2023-08-24 10:12:34,114 file.rtobject INFO 1 execution context was created.
+2023-08-24 10:12:34,117 file.rtobject INFO Initial active configuration set is default.
+2023-08-24 10:12:44,161 file.ManagerServant INFO Master manager not found
+2023-08-24 10:12:46,136 file.rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/DataFlowComponentBase.py", line 123, in on_execute
+    ret = self.onExecute(ec_id)
+  File "myCobotAruco.py", line 203, in onExecute
+    ret = middle.moveLinearCartesianAbs(JARA_ARM.CarPosWithElbow([[1, 0, 0, poseX], [0, 1, 0, poseY], [0, 0, 1, poseZ]], 0,  0))
+AttributeError: 'NoneType' object has no attribute 'moveLinearCartesianAbs'
+
+2023-08-24 10:12:50,422 file.ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2023-08-24 10:12:52,350 file.SdoServiceAdmin WARNING No available SDO service in the factory: 
+2023-08-24 10:12:52,350 file.SdoServiceAdmin ERROR type  not exists.
+2023-08-24 10:12:54,199 file.ManagerServant INFO Master manager not found

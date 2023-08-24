@@ -1,0 +1,102 @@
+2023-08-24 10:55:03,486 file.manager INFO 2.0.1
+2023-08-24 10:55:03,486 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 10:55:03,486 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-08-24 10:55:03,486 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 10:55:03,486 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-08-24 10:55:03,486 file.manager INFO   All right reserved.
+2023-08-24 10:55:03,486 file.manager INFO Manager starting.
+2023-08-24 10:55:03,486 file.manager INFO Starting local logging.
+2023-08-24 10:55:03,489 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2023-08-24 10:55:03,493 file.ManagerServant INFO Master manager not found
+2023-08-24 10:55:03,495 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-08-24 10:55:03,499 file.manager INFO Component type conf file: myCobotAruco.conf loaded.
+2023-08-24 10:55:03,500 file.ec_base INFO setRate(1000000.000000) done
+2023-08-24 10:55:03,500 file.ec_base INFO setRate(1000.000000) done
+2023-08-24 10:55:03,501 file.rtobject INFO 1 execution context was created.
+2023-08-24 10:55:03,503 file.rtobject INFO Initial active configuration set is default.
+2023-08-24 10:55:13,548 file.ManagerServant INFO Master manager not found
+2023-08-24 10:55:23,587 file.ManagerServant INFO Master manager not found
+2023-08-24 10:55:33,623 file.ManagerServant INFO Master manager not found
+2023-08-24 10:55:43,662 file.ManagerServant INFO Master manager not found
+2023-08-24 10:55:53,700 file.ManagerServant INFO Master manager not found
+2023-08-24 10:56:03,736 file.ManagerServant INFO Master manager not found
+2023-08-24 10:56:13,775 file.ManagerServant INFO Master manager not found
+2023-08-24 10:56:15,282 file.SdoServiceAdmin WARNING No available SDO service in the factory: 
+2023-08-24 10:56:15,282 file.SdoServiceAdmin ERROR type  not exists.
+2023-08-24 10:56:23,815 file.ManagerServant INFO Master manager not found
+2023-08-24 10:56:33,863 file.ManagerServant INFO Master manager not found
+2023-08-24 10:56:43,905 file.ManagerServant INFO Master manager not found
+2023-08-24 10:56:53,952 file.ManagerServant INFO Master manager not found
+2023-08-24 10:57:03,998 file.ManagerServant INFO Master manager not found
+2023-08-24 10:57:14,038 file.ManagerServant INFO Master manager not found
+2023-08-24 10:57:24,080 file.ManagerServant INFO Master manager not found
+2023-08-24 10:57:34,118 file.ManagerServant INFO Master manager not found
+2023-08-24 10:57:44,156 file.ManagerServant INFO Master manager not found
+2023-08-24 10:57:54,198 file.ManagerServant INFO Master manager not found
+2023-08-24 10:58:04,241 file.ManagerServant INFO Master manager not found
+2023-08-24 10:58:14,281 file.ManagerServant INFO Master manager not found
+2023-08-24 10:58:24,320 file.ManagerServant INFO Master manager not found
+2023-08-24 10:58:34,365 file.ManagerServant INFO Master manager not found
+2023-08-24 10:58:44,406 file.ManagerServant INFO Master manager not found
+2023-08-24 10:58:54,450 file.ManagerServant INFO Master manager not found
+2023-08-24 10:59:04,493 file.ManagerServant INFO Master manager not found
+2023-08-24 10:59:14,539 file.ManagerServant INFO Master manager not found
+2023-08-24 10:59:24,586 file.ManagerServant INFO Master manager not found
+2023-08-24 10:59:34,635 file.ManagerServant INFO Master manager not found
+2023-08-24 10:59:44,681 file.ManagerServant INFO Master manager not found
+2023-08-24 10:59:54,728 file.ManagerServant INFO Master manager not found
+2023-08-24 11:00:04,777 file.ManagerServant INFO Master manager not found
+2023-08-24 11:00:14,823 file.ManagerServant INFO Master manager not found
+2023-08-24 11:00:24,868 file.ManagerServant INFO Master manager not found
+2023-08-24 11:00:34,916 file.ManagerServant INFO Master manager not found
+2023-08-24 11:00:44,962 file.ManagerServant INFO Master manager not found
+2023-08-24 11:00:55,009 file.ManagerServant INFO Master manager not found
+2023-08-24 11:01:05,055 file.ManagerServant INFO Master manager not found
+2023-08-24 11:01:15,101 file.ManagerServant INFO Master manager not found
+2023-08-24 11:01:25,149 file.ManagerServant INFO Master manager not found
+2023-08-24 11:01:35,196 file.ManagerServant INFO Master manager not found
+2023-08-24 11:01:45,244 file.ManagerServant INFO Master manager not found
+2023-08-24 11:01:55,290 file.ManagerServant INFO Master manager not found
+2023-08-24 11:02:05,336 file.ManagerServant INFO Master manager not found
+2023-08-24 11:02:15,390 file.ManagerServant INFO Master manager not found
+2023-08-24 11:02:25,437 file.ManagerServant INFO Master manager not found
+2023-08-24 11:02:35,489 file.ManagerServant INFO Master manager not found
+2023-08-24 11:02:45,536 file.ManagerServant INFO Master manager not found
+2023-08-24 11:02:55,583 file.ManagerServant INFO Master manager not found
+2023-08-24 11:03:05,630 file.ManagerServant INFO Master manager not found
+2023-08-24 11:03:15,680 file.ManagerServant INFO Master manager not found
+2023-08-24 11:03:25,726 file.ManagerServant INFO Master manager not found
+2023-08-24 11:03:35,773 file.ManagerServant INFO Master manager not found
+2023-08-24 11:03:45,815 file.ManagerServant INFO Master manager not found
+2023-08-24 11:03:55,864 file.ManagerServant INFO Master manager not found
+2023-08-24 11:04:05,913 file.ManagerServant INFO Master manager not found
+2023-08-24 11:04:15,959 file.ManagerServant INFO Master manager not found
+2023-08-24 11:04:26,005 file.ManagerServant INFO Master manager not found
+2023-08-24 11:04:36,051 file.ManagerServant INFO Master manager not found
+2023-08-24 11:04:46,098 file.ManagerServant INFO Master manager not found
+2023-08-24 11:04:56,146 file.ManagerServant INFO Master manager not found
+2023-08-24 11:05:06,194 file.ManagerServant INFO Master manager not found
+2023-08-24 11:05:16,241 file.ManagerServant INFO Master manager not found
+2023-08-24 11:05:26,289 file.ManagerServant INFO Master manager not found
+2023-08-24 11:05:36,342 file.ManagerServant INFO Master manager not found
+2023-08-24 11:05:46,389 file.ManagerServant INFO Master manager not found
+2023-08-24 11:05:56,435 file.ManagerServant INFO Master manager not found
+2023-08-24 11:06:06,483 file.ManagerServant INFO Master manager not found
+2023-08-24 11:06:16,526 file.ManagerServant INFO Master manager not found
+2023-08-24 11:06:26,574 file.ManagerServant INFO Master manager not found
+2023-08-24 11:06:36,621 file.ManagerServant INFO Master manager not found
+2023-08-24 11:06:46,665 file.ManagerServant INFO Master manager not found
+2023-08-24 11:06:56,713 file.ManagerServant INFO Master manager not found
+2023-08-24 11:07:06,760 file.ManagerServant INFO Master manager not found
+2023-08-24 11:07:16,807 file.ManagerServant INFO Master manager not found
+2023-08-24 11:07:26,854 file.ManagerServant INFO Master manager not found
+2023-08-24 11:07:36,902 file.ManagerServant INFO Master manager not found
+2023-08-24 11:07:46,950 file.ManagerServant INFO Master manager not found
+2023-08-24 11:07:56,993 file.ManagerServant INFO Master manager not found
+2023-08-24 11:08:07,043 file.ManagerServant INFO Master manager not found
+2023-08-24 11:08:17,090 file.ManagerServant INFO Master manager not found
+2023-08-24 11:08:27,138 file.ManagerServant INFO Master manager not found
+2023-08-24 11:08:37,184 file.ManagerServant INFO Master manager not found
+2023-08-24 11:08:47,228 file.ManagerServant INFO Master manager not found
+2023-08-24 11:08:57,272 file.ManagerServant INFO Master manager not found
+2023-08-24 11:09:07,318 file.ManagerServant INFO Master manager not found

@@ -1,0 +1,41 @@
+2023-08-24 09:49:02,623 file.manager INFO 2.0.1
+2023-08-24 09:49:02,623 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 09:49:02,623 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-08-24 09:49:02,623 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 09:49:02,623 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-08-24 09:49:02,623 file.manager INFO   All right reserved.
+2023-08-24 09:49:02,623 file.manager INFO Manager starting.
+2023-08-24 09:49:02,624 file.manager INFO Starting local logging.
+2023-08-24 09:49:02,625 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2023-08-24 09:49:02,631 file.ManagerServant INFO Master manager not found
+2023-08-24 09:49:02,632 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-08-24 09:49:02,637 file.manager INFO Component type conf file: myCobotAruco.conf loaded.
+2023-08-24 09:49:02,638 file.ec_base INFO setRate(1000000.000000) done
+2023-08-24 09:49:02,639 file.ec_base INFO setRate(1000.000000) done
+2023-08-24 09:49:02,639 file.rtobject INFO 1 execution context was created.
+2023-08-24 09:49:02,642 file.rtobject INFO Initial active configuration set is default.
+2023-08-24 09:49:12,686 file.ManagerServant INFO Master manager not found
+2023-08-24 09:49:14,660 file.SdoServiceAdmin WARNING No available SDO service in the factory: 
+2023-08-24 09:49:14,660 file.SdoServiceAdmin ERROR type  not exists.
+2023-08-24 09:49:22,734 file.ManagerServant INFO Master manager not found
+2023-08-24 09:49:26,713 file.poseIn WARNING buffer empty
+2023-08-24 09:49:26,719 file.rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/DataFlowComponentBase.py", line 123, in on_execute
+    ret = self.onExecute(ec_id)
+  File "myCobotAruco.py", line 198, in onExecute
+    print(self._d_poseIn.data)
+  File "/usr/lib/python3/dist-packages/omniORB/__init__.py", line 572, in __repr__
+    vals.append("%s=%s" % (attr,repr(val)))
+  File "/usr/lib/python3/dist-packages/omniORB/__init__.py", line 572, in __repr__
+    vals.append("%s=%s" % (attr,repr(val)))
+  File "/usr/lib/python3/dist-packages/omniORB/__init__.py", line 572, in __repr__
+    vals.append("%s=%s" % (attr,repr(val)))
+  [Previous line repeated 325 more times]
+  File "/usr/lib/python3/dist-packages/omniORB/__init__.py", line 563, in __repr__
+    desc = findType(self._NP_RepositoryId)
+  File "/usr/lib/python3/dist-packages/omniORB/__init__.py", line 361, in findType
+    return typeMapping.get(repoId)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+2023-08-24 09:49:32,775 file.ManagerServant INFO Master manager not found
+2023-08-24 09:49:42,810 file.ManagerServant INFO Master manager not found

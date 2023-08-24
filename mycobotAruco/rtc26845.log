@@ -1,0 +1,65 @@
+2023-08-24 14:20:06,276 file.manager INFO 2.0.1
+2023-08-24 14:20:06,276 file.manager INFO Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 14:20:06,276 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2023-08-24 14:20:06,276 file.manager INFO Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+2023-08-24 14:20:06,276 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2023-08-24 14:20:06,276 file.manager INFO   All right reserved.
+2023-08-24 14:20:06,276 file.manager INFO Manager starting.
+2023-08-24 14:20:06,276 file.manager INFO Starting local logging.
+2023-08-24 14:20:06,279 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2023-08-24 14:20:06,283 file.ManagerServant INFO Master manager not found
+2023-08-24 14:20:06,284 file.LocalServiceAdmin INFO All the local services are enabled.
+2023-08-24 14:20:06,287 file.manager INFO Component type conf file: myCobotAruco.conf loaded.
+2023-08-24 14:20:06,289 file.ec_base INFO setRate(1000000.000000) done
+2023-08-24 14:20:06,289 file.ec_base INFO setRate(1000.000000) done
+2023-08-24 14:20:06,289 file.rtobject INFO 1 execution context was created.
+2023-08-24 14:20:06,291 file.rtobject INFO Initial active configuration set is default.
+2023-08-24 14:20:16,333 file.ManagerServant INFO Master manager not found
+2023-08-24 14:20:26,374 file.ManagerServant INFO Master manager not found
+2023-08-24 14:20:36,411 file.ManagerServant INFO Master manager not found
+2023-08-24 14:20:38,153 file.rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/DataFlowComponentBase.py", line 123, in on_execute
+    ret = self.onExecute(ec_id)
+  File "myCobotAruco.py", line 217, in onExecute
+    ret=middle.moveLinearCartesianAbs(JARA_ARM.CarPosWithElbow([[1, 0, 0, poseX], [0, 1, 0, poseY], [0, 0, 1, poseZ]], 0,  0))
+  File "/usr/lib/python3/dist-packages/OpenRTM_aist/RTM_IDL/ManipulatorCommonInterface_Middle_idl.py", line 168, in moveLinearCartesianAbs
+    return self._obj.invoke("moveLinearCartesianAbs", _0_JARA_ARM.ManipulatorCommonInterface_Middle._d_moveLinearCartesianAbs, args)
+omniORB.CORBA._omni_sys_exc: CORBA.OBJECT_NOT_EXIST(omniORB.OBJECT_NOT_EXIST_NoMatch, CORBA.COMPLETED_NO)
+
+2023-08-24 14:20:46,445 file.ManagerServant INFO Master manager not found
+2023-08-24 14:20:56,476 file.ManagerServant INFO Master manager not found
+2023-08-24 14:21:06,509 file.ManagerServant INFO Master manager not found
+2023-08-24 14:21:16,542 file.ManagerServant INFO Master manager not found
+2023-08-24 14:21:26,575 file.ManagerServant INFO Master manager not found
+2023-08-24 14:21:36,609 file.ManagerServant INFO Master manager not found
+2023-08-24 14:21:46,643 file.ManagerServant INFO Master manager not found
+2023-08-24 14:21:56,675 file.ManagerServant INFO Master manager not found
+2023-08-24 14:22:06,708 file.ManagerServant INFO Master manager not found
+2023-08-24 14:22:16,744 file.ManagerServant INFO Master manager not found
+2023-08-24 14:22:26,781 file.ManagerServant INFO Master manager not found
+2023-08-24 14:22:36,814 file.ManagerServant INFO Master manager not found
+2023-08-24 14:22:46,849 file.ManagerServant INFO Master manager not found
+2023-08-24 14:22:56,882 file.ManagerServant INFO Master manager not found
+2023-08-24 14:23:06,917 file.ManagerServant INFO Master manager not found
+2023-08-24 14:23:16,949 file.ManagerServant INFO Master manager not found
+2023-08-24 14:23:26,986 file.ManagerServant INFO Master manager not found
+2023-08-24 14:23:37,018 file.ManagerServant INFO Master manager not found
+2023-08-24 14:23:47,052 file.ManagerServant INFO Master manager not found
+2023-08-24 14:23:57,086 file.ManagerServant INFO Master manager not found
+2023-08-24 14:24:07,121 file.ManagerServant INFO Master manager not found
+2023-08-24 14:24:17,167 file.ManagerServant INFO Master manager not found
+2023-08-24 14:24:27,198 file.ManagerServant INFO Master manager not found
+2023-08-24 14:24:37,230 file.ManagerServant INFO Master manager not found
+2023-08-24 14:24:47,264 file.ManagerServant INFO Master manager not found
+2023-08-24 14:24:57,297 file.ManagerServant INFO Master manager not found
+2023-08-24 14:25:07,335 file.ManagerServant INFO Master manager not found
+2023-08-24 14:25:17,372 file.ManagerServant INFO Master manager not found
+2023-08-24 14:25:27,407 file.ManagerServant INFO Master manager not found
+2023-08-24 14:25:37,440 file.ManagerServant INFO Master manager not found
+2023-08-24 14:25:47,492 file.ManagerServant INFO Master manager not found
+2023-08-24 14:25:57,524 file.ManagerServant INFO Master manager not found
+2023-08-24 14:26:07,556 file.ManagerServant INFO Master manager not found
+2023-08-24 14:26:17,593 file.ManagerServant INFO Master manager not found
+2023-08-24 14:26:27,627 file.ManagerServant INFO Master manager not found
+2023-08-24 14:26:37,660 file.ManagerServant INFO Master manager not found
+2023-08-24 14:26:47,689 file.ManagerServant INFO Master manager not found
