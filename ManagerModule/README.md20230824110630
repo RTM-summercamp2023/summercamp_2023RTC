@@ -104,12 +104,12 @@ ModuleDescription
 <table>
   <tr>
     <td>DataType</td>
-    <td>Img::TimedCameraImage</td>
+    <td>RTC::TimedLong</td>
     <td></td>
   </tr>
   <tr>
     <td>IDL file</td>
-    <td colspan="2">CameraCommonInterface.idl</td>
+    <td colspan="2">BasicDataType.idl</td>
   </tr>
   <tr>
     <td>Number of Data</td>
@@ -140,12 +140,12 @@ ModuleDescription
 <table>
   <tr>
     <td>DataType</td>
-    <td>arUco::arUcoPose3D</td>
+    <td>RTC::TimedLong</td>
     <td></td>
   </tr>
   <tr>
     <td>IDL file</td>
-    <td colspan="2">ArUco.idl</td>
+    <td colspan="2">BasicDataType.idl</td>
   </tr>
   <tr>
     <td>Number of Data</td>
@@ -176,7 +176,7 @@ ModuleDescription
 <table>
   <tr>
     <td>DataType</td>
-    <td>RTC::TimedShort</td>
+    <td>RTC::TimedLong</td>
     <td></td>
   </tr>
   <tr>
@@ -212,12 +212,12 @@ ModuleDescription
 <table>
   <tr>
     <td>DataType</td>
-    <td>RTC::TimedPose3D</td>
+    <td>RTC::TimedLong</td>
     <td></td>
   </tr>
   <tr>
     <td>IDL file</td>
-    <td colspan="2">ExtendedDataTypes.idl</td>
+    <td colspan="2">BasicDataType.idl</td>
   </tr>
   <tr>
     <td>Number of Data</td>
@@ -251,12 +251,12 @@ ModuleDescription
 <table>
   <tr>
     <td>DataType</td>
-    <td>Img::TimedCameraImage</td>
+    <td>RTC::TimedLong</td>
     <td></td>
   </tr>
   <tr>
     <td>IDL file</td>
-    <td colspan="2">CameraCommonInterface.idl</td>
+    <td colspan="2">BasicDataType.idl</td>
   </tr>
   <tr>
     <td>Number of Data</td>
@@ -287,12 +287,12 @@ ModuleDescription
 <table>
   <tr>
     <td>DataType</td>
-    <td>RTC::TimedPose3D</td>
+    <td>RTC::TimedLong</td>
     <td></td>
   </tr>
   <tr>
     <td>IDL file</td>
-    <td colspan="2">ExtendedDataTypes.idl</td>
+    <td colspan="2">BasicDataType.idl</td>
   </tr>
   <tr>
     <td>Number of Data</td>
@@ -323,12 +323,12 @@ ModuleDescription
 <table>
   <tr>
     <td>DataType</td>
-    <td>arUco::arUcoPose3D</td>
+    <td>RTC::TimedLong</td>
     <td></td>
   </tr>
   <tr>
     <td>IDL file</td>
-    <td colspan="2">ArUco.idl</td>
+    <td colspan="2">BasicDataType.idl</td>
   </tr>
   <tr>
     <td>Number of Data</td>
