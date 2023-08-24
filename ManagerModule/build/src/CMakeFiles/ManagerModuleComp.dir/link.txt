@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o -o ManagerModuleComp   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib: -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 

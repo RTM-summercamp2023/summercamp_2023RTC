@@ -21,10 +21,7 @@
 
 // Service Consumer stub headers
 // <rtc-template block="consumer_stub_h">
-#include "CameraCommonInterfaceStub.h"
-#include "ArUcoStub.h"
 #include "BasicDataTypeStub.h"
-#include "ExtendedDataTypesStub.h"
 
 // </rtc-template>
 
@@ -120,7 +117,7 @@ class ManagerModule
    * 
    * 
    */
-  // RTC::ReturnCode_t onActivated(RTC::UniqueId ec_id) override;
+  RTC::ReturnCode_t onActivated(RTC::UniqueId ec_id) override;
 
   /***
    *
@@ -132,7 +129,7 @@ class ManagerModule
    * 
    * 
    */
-  // RTC::ReturnCode_t onDeactivated(RTC::UniqueId ec_id) override;
+  RTC::ReturnCode_t onDeactivated(RTC::UniqueId ec_id) override;
 
   /***
    *
@@ -144,7 +141,7 @@ class ManagerModule
    * 
    * 
    */
-  // RTC::ReturnCode_t onExecute(RTC::UniqueId ec_id) override;
+  RTC::ReturnCode_t onExecute(RTC::UniqueId ec_id) override;
 
   /***
    *
@@ -224,40 +221,40 @@ class ManagerModule
 
   // DataInPort declaration
   // <rtc-template block="inport_declare">
-  Img::TimedCameraImage m_image_in;
+  RTC::TimedLong m_image_in;
   /*!
    */
-  RTC::InPort<Img::TimedCameraImage> m_image_inIn;
-  arUco::arUcoPose3D m_aruco_in;
+  RTC::InPort<RTC::TimedLong> m_image_inIn;
+  RTC::TimedLong m_aruco_in;
   /*!
    */
-  RTC::InPort<arUco::arUcoPose3D> m_aruco_inIn;
-  RTC::TimedShort m_ui_in;
+  RTC::InPort<RTC::TimedLong> m_aruco_inIn;
+  RTC::TimedLong m_ui_in;
   /*!
    */
-  RTC::InPort<RTC::TimedShort> m_ui_inIn;
-  RTC::TimedPose3D m_convert_in;
+  RTC::InPort<RTC::TimedLong> m_ui_inIn;
+  RTC::TimedLong m_convert_in;
   /*!
    */
-  RTC::InPort<RTC::TimedPose3D> m_convert_inIn;
+  RTC::InPort<RTC::TimedLong> m_convert_inIn;
   
   // </rtc-template>
 
 
   // DataOutPort declaration
   // <rtc-template block="outport_declare">
-  Img::TimedCameraImage m_aruco_out;
+  RTC::TimedLong m_aruco_out;
   /*!
    */
-  RTC::OutPort<Img::TimedCameraImage> m_aruco_outOut;
-  RTC::TimedPose3D m_arm_out;
+  RTC::OutPort<RTC::TimedLong> m_aruco_outOut;
+  RTC::TimedLong m_arm_out;
   /*!
    */
-  RTC::OutPort<RTC::TimedPose3D> m_arm_outOut;
-  arUco::arUcoPose3D m_convert_out;
+  RTC::OutPort<RTC::TimedLong> m_arm_outOut;
+  RTC::TimedLong m_convert_out;
   /*!
    */
-  RTC::OutPort<arUco::arUcoPose3D> m_convert_outOut;
+  RTC::OutPort<RTC::TimedLong> m_convert_outOut;
   
   // </rtc-template>
 
