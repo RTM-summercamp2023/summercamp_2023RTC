@@ -5,3 +5,7 @@
 [submodule "SingleArUco2"]
 	path = SingleArUco2
 	url = https://github.com/rsdlab/SingleArUco2.git
+
+[submodule "WebCamera2"]
+	path = WebCamera2
+	url = https://github.com/rsdlab/WebCamera2
