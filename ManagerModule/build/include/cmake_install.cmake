@@ -1,4 +1,4 @@
-# Install script for directory: /home/openrtm/workspace/ManagerModule/include
+# Install script for directory: /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/openrtm/workspace/ManagerModule/build/include/ManagerModule/cmake_install.cmake")
+  include("/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/include/ManagerModule/cmake_install.cmake")
 
 endif()
 

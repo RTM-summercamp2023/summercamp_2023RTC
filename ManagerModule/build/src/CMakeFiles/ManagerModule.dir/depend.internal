@@ -3,7 +3,7 @@
 
 src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.o
  ../include/ManagerModule/ManagerModule.h
- /home/openrtm/workspace/ManagerModule/src/ManagerModule.cpp
+ /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModule.cpp
  /usr/include/coil-2.0/coil/Affinity.h
  /usr/include/coil-2.0/coil/ClockManager.h
  /usr/include/coil-2.0/coil/Factory.h
@@ -105,11 +105,11 @@ src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.o
  idl/ArUco.hh
  idl/ArUcoStub.h
 src/CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.o
- /home/openrtm/workspace/ManagerModule/build/idl/ArUco.hh
- /home/openrtm/workspace/ManagerModule/build/idl/ArUcoDynSK.cc
- /home/openrtm/workspace/ManagerModule/build/idl/ArUcoSK.cc
- /home/openrtm/workspace/ManagerModule/build/idl/ArUcoSkel.cpp
- /home/openrtm/workspace/ManagerModule/build/idl/ArUcoSkel.h
+ /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUco.hh
+ /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUcoDynSK.cc
+ /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUcoSK.cc
+ /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUcoSkel.cpp
+ /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUcoSkel.h
  /usr/include/openrtm-2.0/rtm/config_rtc.h
  /usr/include/openrtm-2.0/rtm/idl/BasicDataType.hh
  /usr/include/openrtm-2.0/rtm/idl/CameraCommonInterface.hh

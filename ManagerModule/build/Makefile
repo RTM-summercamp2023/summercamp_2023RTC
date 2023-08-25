@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/openrtm/workspace/ManagerModule
+CMAKE_SOURCE_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/openrtm/workspace/ManagerModule/build
+CMAKE_BINARY_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,7 +94,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/openrtm/workspace/ManagerModule/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -148,9 +148,9 @@ package/fast: package
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/workspace/ManagerModule/build/CMakeFiles /home/openrtm/workspace/ManagerModule/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/workspace/ManagerModule/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -1,4 +1,3 @@
-
 // -*- C++ -*-
 // <rtc-template block="description">
 /*!
@@ -9,6 +8,7 @@
 // </rtc-template>
 
 #include "ManagerModule.h"
+#include<iostream>
 
 // Module specification
 // <rtc-template block="module_spec">
@@ -38,10 +38,17 @@ static const char* managermodule_spec[] =
  * @param manager Maneger Object
  */
 
-struct CIE{
-  float x;
-  float y;
-  float z;
+class CIE{
+   public:
+     float x;
+     float y;
+     float z;
+     CIE(){
+ x=0;
+ y=0;
+ z=0;
+}
+
 };
 
 ManagerModule::ManagerModule(RTC::Manager* manager)
@@ -137,27 +144,31 @@ CIE cie1,cie2;
   if(m_image_inIn.isNew()){//カメライメージが入力されたらアルコRTCにデータを流す
     m_image_inIn.read();
     m_aruco_out.data=m_image_in.data;
+    std::cout<<"image data inputed!!"<<std::endl;//デバッグプリント
     m_aruco_outOut.write();
   }
 
 if(m_aruco_inIn.isNew()){
     m_aruco_inIn.read();//アルコマーカーの座標を読み取る
     float cameraPoseX=0;
+    std::cout<<"aruco data inputed!!"<<std::endl;//デバッグプリント
 
     if(m_aruco_in.ids[0]==1){//idをiに格納
-    cie1.x=cameraPoseX+m_aruco_in.translates[0].x;//idに対応した配列にデータを格納
+    std::cout<<"id:1"<<std::endl;
+    cie1.x=cameraPoseX+m_aruco_in.translates[0].x;//idに対応したインスタンスにデータを格納
     cie1.y=cameraPoseX+m_aruco_in.translates[0].y;
     cie1.z=cameraPoseX+m_aruco_in.translates[0].z;
 
-    cie2.x=cameraPoseX+m_aruco_in.translates[1].x;//idに対応した配列にデータを格納
+    cie2.x=cameraPoseX+m_aruco_in.translates[1].x;//idに対応したインスタンスにデータを格納
     cie2.y=cameraPoseX+m_aruco_in.translates[1].y;
     cie2.z=cameraPoseX+m_aruco_in.translates[1].z;
-    }else if(m_aruco_in.ids[1]==1){
-    cie1.x=cameraPoseX+m_aruco_in.translates[1].x;//idに対応した配列にデータを格納
+    }else if(m_aruco_in.ids[0]==2){
+    std::cout<<"id:2"<<std::endl;
+    cie1.x=cameraPoseX+m_aruco_in.translates[1].x;//idに対応したインスタンスにデータを格納
     cie1.y=cameraPoseX+m_aruco_in.translates[1].y;
     cie1.z=cameraPoseX+m_aruco_in.translates[1].z;
 
-    cie2.x=cameraPoseX+m_aruco_in.translates[0].x;//idに対応した配列にデータを格納
+    cie2.x=cameraPoseX+m_aruco_in.translates[0].x;//idに対応したインスタンスににデータを格納
     cie2.y=cameraPoseX+m_aruco_in.translates[0].y;
     cie2.z=cameraPoseX+m_aruco_in.translates[0].z;
     }
@@ -165,27 +176,35 @@ if(m_aruco_inIn.isNew()){
 
 if(m_ui_inIn.isNew()){//UIの入力受取
     m_ui_inIn.read();
+    std::cout<<"ui data inputed!!"<<std::endl;//デバッグプリント
+    std::cout<<m_ui_in.data<<std::endl;//デバッグプリント
 
 
  switch(m_ui_in.data){//UIからのデータを判別
+
   case 1://UIがマーカー1を選択したら配列[1]の座標を変換RTCに伝達
-  m_convert_out.translates[0].x=cie1.x;
-  m_convert_out.translates[0].y=cie1.y;
-  m_convert_out.translates[0].z=cie1.z;
+    std::cout<<"ui select 1"<<std::endl;//デバッグプリント
+    m_convert_out.translates[0].x=cie1.x;
+    m_convert_out.translates[0].y=cie1.y;
+    m_convert_out.translates[0].z=cie1.z;
     break;
 
   case 2://UIがマーカー2を選択したら配列[2]の座標を変換RTCに伝達
-  m_convert_out.translates[0].x=cie2.x;
-  m_convert_out.translates[0].y=cie2.y;
-  m_convert_out.translates[0].z=cie2.z;
+    std::cout<<"ui select 2"<<std::endl;//デバッグプリント
+    m_convert_out.translates[0].x=cie2.x;
+    m_convert_out.translates[0].y=cie2.y;
+    m_convert_out.translates[0].z=cie2.z;
     break;
 
 }
 
     m_convert_outOut.write(m_convert_out);
+    std::cout<<"convert now..."<<std::endl;//デバッグプリント
 
     while(true){
-      if(m_convert_inIn.isNew()){//変換データが返ってくるまで待機
+          if(m_convert_inIn.isNew()){//変換データが返ってくるまで待機
+    std::cout<<"convert data inputed!!"<<std::endl;//デバッグプリント
+
         m_convert_inIn.read();
         break;
         }

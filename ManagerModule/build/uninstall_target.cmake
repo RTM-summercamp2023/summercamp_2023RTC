@@ -1,8 +1,8 @@
-if(NOT EXISTS "/home/openrtm/workspace/ManagerModule/build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/openrtm/workspace/ManagerModule/build/install_manifest.txt\"")
-endif(NOT EXISTS "/home/openrtm/workspace/ManagerModule/build/install_manifest.txt")
+if(NOT EXISTS "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/install_manifest.txt\"")
+endif(NOT EXISTS "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/install_manifest.txt")
 
-file(READ "/home/openrtm/workspace/ManagerModule/build/install_manifest.txt" files)
+file(READ "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

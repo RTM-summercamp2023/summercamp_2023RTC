@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/openrtm/workspace/ManagerModule
+CMAKE_SOURCE_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/openrtm/workspace/ManagerModule/build
+CMAKE_BINARY_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build
 
 # Utility rule file for ManagerModule_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/openrtm/workspace/ManagerModule/build
 include CMakeFiles/ManagerModule_uninstall.dir/progress.make
 
 CMakeFiles/ManagerModule_uninstall:
-	/usr/bin/cmake -P /home/openrtm/workspace/ManagerModule/build/uninstall_target.cmake
+	/usr/bin/cmake -P /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/uninstall_target.cmake
 
 ManagerModule_uninstall: CMakeFiles/ManagerModule_uninstall
 ManagerModule_uninstall: CMakeFiles/ManagerModule_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/ManagerModule_uninstall.dir/clean:
 .PHONY : CMakeFiles/ManagerModule_uninstall.dir/clean
 
 CMakeFiles/ManagerModule_uninstall.dir/depend:
-	cd /home/openrtm/workspace/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/openrtm/workspace/ManagerModule /home/openrtm/workspace/ManagerModule /home/openrtm/workspace/ManagerModule/build /home/openrtm/workspace/ManagerModule/build /home/openrtm/workspace/ManagerModule/build/CMakeFiles/ManagerModule_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles/ManagerModule_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ManagerModule_uninstall.dir/depend
 

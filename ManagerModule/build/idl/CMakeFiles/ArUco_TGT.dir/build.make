@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/openrtm/workspace/ManagerModule
+CMAKE_SOURCE_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/openrtm/workspace/ManagerModule/build
+CMAKE_BINARY_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build
 
 # Utility rule file for ArUco_TGT.
 
@@ -58,9 +58,9 @@ idl/CMakeFiles/ArUco_TGT: idl/ArUcoSkel.h
 
 
 idl/ArUcoSkel.cpp: ../idl/ArUco.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/openrtm/workspace/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Compiling /home/openrtm/workspace/ManagerModule/idl/ArUco.idl"
-	cd /home/openrtm/workspace/ManagerModule/build/idl && python3 /usr/bin/rtm2-skelwrapper --include-dir= --skel-suffix=Skel --stub-suffix=Stub --idl-file=ArUco.idl
-	cd /home/openrtm/workspace/ManagerModule/build/idl && omniidl -bcxx -Wba -nf -Wbuse_quotes -Wbshortcut -I/usr/include/openrtm-2.0/rtm/idl /home/openrtm/workspace/ManagerModule/idl/ArUco.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Compiling /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/idl/ArUco.idl"
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl && python3 /usr/bin/rtm2-skelwrapper --include-dir= --skel-suffix=Skel --stub-suffix=Stub --idl-file=ArUco.idl
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl && omniidl -bcxx -Wba -nf -Wbuse_quotes -Wbshortcut -I/usr/include/openrtm-2.0/rtm/idl /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/idl/ArUco.idl
 
 idl/ArUcoSkel.h: idl/ArUcoSkel.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate idl/ArUcoSkel.h
@@ -78,10 +78,10 @@ idl/CMakeFiles/ArUco_TGT.dir/build: ArUco_TGT
 .PHONY : idl/CMakeFiles/ArUco_TGT.dir/build
 
 idl/CMakeFiles/ArUco_TGT.dir/clean:
-	cd /home/openrtm/workspace/ManagerModule/build/idl && $(CMAKE_COMMAND) -P CMakeFiles/ArUco_TGT.dir/cmake_clean.cmake
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl && $(CMAKE_COMMAND) -P CMakeFiles/ArUco_TGT.dir/cmake_clean.cmake
 .PHONY : idl/CMakeFiles/ArUco_TGT.dir/clean
 
 idl/CMakeFiles/ArUco_TGT.dir/depend:
-	cd /home/openrtm/workspace/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/openrtm/workspace/ManagerModule /home/openrtm/workspace/ManagerModule/idl /home/openrtm/workspace/ManagerModule/build /home/openrtm/workspace/ManagerModule/build/idl /home/openrtm/workspace/ManagerModule/build/idl/CMakeFiles/ArUco_TGT.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/idl /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/CMakeFiles/ArUco_TGT.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : idl/CMakeFiles/ArUco_TGT.dir/depend
 
