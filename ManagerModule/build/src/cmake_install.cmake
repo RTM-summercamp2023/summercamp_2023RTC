@@ -1,4 +1,4 @@
-# Install script for directory: /home/openrtm/workspace/ManagerModule/src
+# Install script for directory: /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xcomponentx" OR NOT CMAKE_INSTALL_CO
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/ManagerModule.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule" TYPE SHARED_LIBRARY FILES "/home/openrtm/workspace/ManagerModule/build/src/ManagerModule.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule" TYPE SHARED_LIBRARY FILES "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src/ManagerModule.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/ManagerModule.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/ManagerModule.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -63,7 +63,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xcomponentx" OR NOT CMAKE_INSTALL_CO
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/ManagerModuleComp"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule" TYPE EXECUTABLE FILES "/home/openrtm/workspace/ManagerModule/build/src/ManagerModuleComp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule" TYPE EXECUTABLE FILES "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src/ManagerModuleComp")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/ManagerModuleComp" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/ManagerModuleComp")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -73,6 +73,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xcomponentx" OR NOT CMAKE_INSTALL_CO
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xcomponentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule" TYPE FILE FILES "/home/openrtm/workspace/ManagerModule/RTC.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule" TYPE FILE FILES "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/RTC.xml")
 endif()
 

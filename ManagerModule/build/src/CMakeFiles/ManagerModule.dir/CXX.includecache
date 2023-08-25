@@ -32,9 +32,11 @@ rtm/DataInPort.h
 rtm/DataOutPort.h
 -
 
-/home/openrtm/workspace/ManagerModule/src/ManagerModule.cpp
+/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModule.cpp
 ManagerModule.h
-/home/openrtm/workspace/ManagerModule/src/ManagerModule.h
+/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModule.h
+iostream
+-
 
 /usr/include/coil-2.0/coil/Affinity.h
 string

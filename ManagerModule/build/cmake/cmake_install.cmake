@@ -1,4 +1,4 @@
-# Install script for directory: /home/openrtm/workspace/ManagerModule/cmake
+# Install script for directory: /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

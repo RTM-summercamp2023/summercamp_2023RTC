@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -fPIC -O2 -std=gnu++11
 
 CXX_DEFINES = -DManagerModule_EXPORTS
 
-CXX_INCLUDES = -I/home/openrtm/workspace/ManagerModule/include -I/home/openrtm/workspace/ManagerModule/include/ManagerModule -I/home/openrtm/workspace/ManagerModule/build -I/home/openrtm/workspace/ManagerModule/build/idl -I/usr/include/coil-2.0 -I/usr/include/openrtm-2.0 -I/usr/include/openrtm-2.0/rtm/idl -I/usr/include/openrtm-2.0/rtm/ext 
+CXX_INCLUDES = -I/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/include -I/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/include/ManagerModule -I/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build -I/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl -I/usr/include/coil-2.0 -I/usr/include/openrtm-2.0 -I/usr/include/openrtm-2.0/rtm/idl -I/usr/include/openrtm-2.0/rtm/ext 
 

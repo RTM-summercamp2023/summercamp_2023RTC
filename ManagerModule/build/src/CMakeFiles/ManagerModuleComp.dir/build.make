@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/openrtm/workspace/ManagerModule
+CMAKE_SOURCE_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/openrtm/workspace/ManagerModule/build
+CMAKE_BINARY_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/ManagerModuleComp.dir/depend.make
@@ -59,42 +59,42 @@ include src/CMakeFiles/ManagerModuleComp.dir/flags.make
 
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o: src/CMakeFiles/ManagerModuleComp.dir/flags.make
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o: ../src/ManagerModuleComp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/openrtm/workspace/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o -c /home/openrtm/workspace/ManagerModule/src/ManagerModuleComp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o"
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o -c /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModuleComp.cpp
 
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.i"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/openrtm/workspace/ManagerModule/src/ManagerModuleComp.cpp > CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModuleComp.cpp > CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.i
 
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.s"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/openrtm/workspace/ManagerModule/src/ManagerModuleComp.cpp -o CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModuleComp.cpp -o CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.s
 
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o: src/CMakeFiles/ManagerModuleComp.dir/flags.make
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o: ../src/ManagerModule.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/openrtm/workspace/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o -c /home/openrtm/workspace/ManagerModule/src/ManagerModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o"
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o -c /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModule.cpp
 
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.i"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/openrtm/workspace/ManagerModule/src/ManagerModule.cpp > CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModule.cpp > CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.i
 
 src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.s"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/openrtm/workspace/ManagerModule/src/ManagerModule.cpp -o CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src/ManagerModule.cpp -o CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.s
 
 src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o: src/CMakeFiles/ManagerModuleComp.dir/flags.make
 src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o: idl/ArUcoSkel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/openrtm/workspace/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o -c /home/openrtm/workspace/ManagerModule/build/idl/ArUcoSkel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o"
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o -c /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUcoSkel.cpp
 
 src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.i"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/openrtm/workspace/ManagerModule/build/idl/ArUcoSkel.cpp > CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUcoSkel.cpp > CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.i
 
 src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.s"
-	cd /home/openrtm/workspace/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/openrtm/workspace/ManagerModule/build/idl/ArUcoSkel.cpp -o CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/ArUcoSkel.cpp -o CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.s
 
 # Object files for target ManagerModuleComp
 ManagerModuleComp_OBJECTS = \
@@ -110,8 +110,8 @@ src/ManagerModuleComp: src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o
 src/ManagerModuleComp: src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o
 src/ManagerModuleComp: src/CMakeFiles/ManagerModuleComp.dir/build.make
 src/ManagerModuleComp: src/CMakeFiles/ManagerModuleComp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/openrtm/workspace/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ManagerModuleComp"
-	cd /home/openrtm/workspace/ManagerModule/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ManagerModuleComp.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ManagerModuleComp"
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ManagerModuleComp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/ManagerModuleComp.dir/build: src/ManagerModuleComp
@@ -119,10 +119,10 @@ src/CMakeFiles/ManagerModuleComp.dir/build: src/ManagerModuleComp
 .PHONY : src/CMakeFiles/ManagerModuleComp.dir/build
 
 src/CMakeFiles/ManagerModuleComp.dir/clean:
-	cd /home/openrtm/workspace/ManagerModule/build/src && $(CMAKE_COMMAND) -P CMakeFiles/ManagerModuleComp.dir/cmake_clean.cmake
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src && $(CMAKE_COMMAND) -P CMakeFiles/ManagerModuleComp.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/ManagerModuleComp.dir/clean
 
 src/CMakeFiles/ManagerModuleComp.dir/depend:
-	cd /home/openrtm/workspace/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/openrtm/workspace/ManagerModule /home/openrtm/workspace/ManagerModule/src /home/openrtm/workspace/ManagerModule/build /home/openrtm/workspace/ManagerModule/build/src /home/openrtm/workspace/ManagerModule/build/src/CMakeFiles/ManagerModuleComp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/src /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src/CMakeFiles/ManagerModuleComp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/ManagerModuleComp.dir/depend
 

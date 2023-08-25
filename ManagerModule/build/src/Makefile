@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/openrtm/workspace/ManagerModule
+CMAKE_SOURCE_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/openrtm/workspace/ManagerModule/build
+CMAKE_BINARY_DIR = /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,7 +83,7 @@ install/local/fast: preinstall/fast
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/openrtm/workspace/ManagerModule/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/openrtm/workspace/ManagerModule/build/CPackSourceConfig.cmake
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -127,7 +127,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/openrtm/workspace/ManagerModule/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -148,14 +148,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/openrtm/workspace/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/workspace/ManagerModule/build/CMakeFiles /home/openrtm/workspace/ManagerModule/build/src/CMakeFiles/progress.marks
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/workspace/ManagerModule/build/CMakeFiles 0
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src/CMakeFiles/progress.marks
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -165,22 +165,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/openrtm/workspace/ManagerModule/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/ManagerModuleComp.dir/rule:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ManagerModuleComp.dir/rule
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ManagerModuleComp.dir/rule
 .PHONY : src/CMakeFiles/ManagerModuleComp.dir/rule
 
 # Convenience name for target.
@@ -190,12 +190,12 @@ ManagerModuleComp: src/CMakeFiles/ManagerModuleComp.dir/rule
 
 # fast build rule for target.
 ManagerModuleComp/fast:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/build
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/build
 .PHONY : ManagerModuleComp/fast
 
 # Convenience name for target.
 src/CMakeFiles/ManagerModule.dir/rule:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ManagerModule.dir/rule
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ManagerModule.dir/rule
 .PHONY : src/CMakeFiles/ManagerModule.dir/rule
 
 # Convenience name for target.
@@ -205,7 +205,7 @@ ManagerModule: src/CMakeFiles/ManagerModule.dir/rule
 
 # fast build rule for target.
 ManagerModule/fast:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/build
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/build
 .PHONY : ManagerModule/fast
 
 ManagerModule.o: ManagerModule.cpp.o
@@ -214,8 +214,8 @@ ManagerModule.o: ManagerModule.cpp.o
 
 # target to build an object file
 ManagerModule.cpp.o:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.o
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.o
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.o
 .PHONY : ManagerModule.cpp.o
 
 ManagerModule.i: ManagerModule.cpp.i
@@ -224,8 +224,8 @@ ManagerModule.i: ManagerModule.cpp.i
 
 # target to preprocess a source file
 ManagerModule.cpp.i:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.i
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.i
 .PHONY : ManagerModule.cpp.i
 
 ManagerModule.s: ManagerModule.cpp.s
@@ -234,8 +234,8 @@ ManagerModule.s: ManagerModule.cpp.s
 
 # target to generate assembly for a file
 ManagerModule.cpp.s:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.s
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModule.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/ManagerModule.cpp.s
 .PHONY : ManagerModule.cpp.s
 
 ManagerModuleComp.o: ManagerModuleComp.cpp.o
@@ -244,7 +244,7 @@ ManagerModuleComp.o: ManagerModuleComp.cpp.o
 
 # target to build an object file
 ManagerModuleComp.cpp.o:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.o
 .PHONY : ManagerModuleComp.cpp.o
 
 ManagerModuleComp.i: ManagerModuleComp.cpp.i
@@ -253,7 +253,7 @@ ManagerModuleComp.i: ManagerModuleComp.cpp.i
 
 # target to preprocess a source file
 ManagerModuleComp.cpp.i:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.i
 .PHONY : ManagerModuleComp.cpp.i
 
 ManagerModuleComp.s: ManagerModuleComp.cpp.s
@@ -262,7 +262,7 @@ ManagerModuleComp.s: ManagerModuleComp.cpp.s
 
 # target to generate assembly for a file
 ManagerModuleComp.cpp.s:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/ManagerModuleComp.cpp.s
 .PHONY : ManagerModuleComp.cpp.s
 
 __/idl/ArUcoSkel.o: __/idl/ArUcoSkel.cpp.o
@@ -271,8 +271,8 @@ __/idl/ArUcoSkel.o: __/idl/ArUcoSkel.cpp.o
 
 # target to build an object file
 __/idl/ArUcoSkel.cpp.o:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.o
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.o
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.o
 .PHONY : __/idl/ArUcoSkel.cpp.o
 
 __/idl/ArUcoSkel.i: __/idl/ArUcoSkel.cpp.i
@@ -281,8 +281,8 @@ __/idl/ArUcoSkel.i: __/idl/ArUcoSkel.cpp.i
 
 # target to preprocess a source file
 __/idl/ArUcoSkel.cpp.i:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.i
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.i
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.i
 .PHONY : __/idl/ArUcoSkel.cpp.i
 
 __/idl/ArUcoSkel.s: __/idl/ArUcoSkel.cpp.s
@@ -291,8 +291,8 @@ __/idl/ArUcoSkel.s: __/idl/ArUcoSkel.cpp.s
 
 # target to generate assembly for a file
 __/idl/ArUcoSkel.cpp.s:
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.s
-	cd /home/openrtm/workspace/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModuleComp.dir/build.make src/CMakeFiles/ManagerModuleComp.dir/__/idl/ArUcoSkel.cpp.s
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(MAKE) -f src/CMakeFiles/ManagerModule.dir/build.make src/CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.s
 .PHONY : __/idl/ArUcoSkel.cpp.s
 
 # Help Target
@@ -331,6 +331,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/openrtm/workspace/ManagerModule/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

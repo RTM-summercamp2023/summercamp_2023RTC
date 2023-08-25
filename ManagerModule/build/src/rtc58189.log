@@ -1,0 +1,20 @@
+Aug 25 05:50:04.445 INFO: manager: 2.0.1
+Aug 25 05:50:04.445 INFO: manager: Copyright (C) 2003-2022, Noriaki Ando and OpenRTM development team,
+Aug 25 05:50:04.445 INFO: manager:   Intelligent Systems Research Institute, AIST,
+Aug 25 05:50:04.445 INFO: manager: Copyright (C) 2022, Noriaki Ando and OpenRTM development team,
+Aug 25 05:50:04.445 INFO: manager:   Industrial Cyber-Physical Research Center, AIST,
+Aug 25 05:50:04.445 INFO: manager:   All right reserved.
+Aug 25 05:50:04.445 INFO: manager: Manager starting.
+Aug 25 05:50:04.445 INFO: manager: Starting local logging.
+Aug 25 05:50:04.461 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Aug 25 05:50:04.461 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Aug 25 05:50:04.462 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Aug 25 05:50:04.463 WARNING: ManagerServant: Master manager not found
+Aug 25 05:50:04.464 INFO: LocalServiceAdmin: All the local services are enabled.
+Aug 25 05:50:04.466 INFO: ec_base: setRate(1000000.000000) done
+Aug 25 05:50:04.466 INFO: ec_base: setRate(1000.000000) done
+Aug 25 05:50:04.466 INFO: ManagerModule0: 1 execution context was created.
+Aug 25 05:50:04.469 INFO: ManagerModule0: Initial active configuration set is default.
+Aug 25 05:50:14.502 INFO: ManagerServant: Master manager not found
+Aug 25 05:50:24.533 INFO: ManagerServant: Master manager not found
+Aug 25 05:50:34.552 INFO: ManagerServant: Master manager not found

@@ -1,4 +1,4 @@
-# Install script for directory: /home/openrtm/workspace/ManagerModule
+# Install script for directory: /home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,15 +38,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xcomponentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/idl" TYPE FILE FILES "/home/openrtm/workspace/ManagerModule/idl/ArUco.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openrtm-2.0/components/c++/Category/ManagerModule/idl" TYPE FILE FILES "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/idl/ArUco.idl")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/openrtm/workspace/ManagerModule/build/cmake/cmake_install.cmake")
-  include("/home/openrtm/workspace/ManagerModule/build/idl/cmake_install.cmake")
-  include("/home/openrtm/workspace/ManagerModule/build/include/cmake_install.cmake")
-  include("/home/openrtm/workspace/ManagerModule/build/src/cmake_install.cmake")
+  include("/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/cmake/cmake_install.cmake")
+  include("/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/idl/cmake_install.cmake")
+  include("/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/include/cmake_install.cmake")
+  include("/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/src/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/openrtm/workspace/ManagerModule/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/openrtm/Documents/git_repositry/summercamp_2023RTC/ManagerModule/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
