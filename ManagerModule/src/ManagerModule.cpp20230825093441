@@ -110,22 +110,67 @@ RTC::ReturnCode_t ManagerModule::onFinalize()
 //}
 
 
-//RTC::ReturnCode_t ManagerModule::onActivated(RTC::UniqueId /*ec_id*/)
-//{
-//  return RTC::RTC_OK;
-//}
+RTC::ReturnCode_t ManagerModule::onActivated(RTC::UniqueId /*ec_id*/)
+{
+  return RTC::RTC_OK;
+}
 
 
-//RTC::ReturnCode_t ManagerModule::onDeactivated(RTC::UniqueId /*ec_id*/)
-//{
-//  return RTC::RTC_OK;
-//}
+RTC::ReturnCode_t ManagerModule::onDeactivated(RTC::UniqueId /*ec_id*/)
+{
+  return RTC::RTC_OK;
+}
 
 
-//RTC::ReturnCode_t ManagerModule::onExecute(RTC::UniqueId /*ec_id*/)
-//{
-//  return RTC::RTC_OK;
-//}
+RTC::ReturnCode_t ManagerModule::onExecute(RTC::UniqueId /*ec_id*/)
+{
+  float Outpose[2];//座標を格納する配列
+  int i;
+
+  if(m_image_inIn.isNew()){//カメライメージが入力されたらアルコRTCにデータを流す
+    m_image_inIn.read();
+    m_aruco_out.data=m_image_in.data;
+    m_aruco_outOut.write();
+  }
+
+if(m_aruco_inIn.isNew()){
+    m_aruco_inIn.read();//アルコマーカーの座標を読み取る
+    i=m_ArUco3DPose.ids[0];//idをiに格納
+    Outpose[i]=m_cameraPoseX+m_ArucoMakerPose.translates[0].x;　//idに対応した配列にデータを格納
+    Outpose[i]=m_cameraPoseX+m_ArucoMakerPose.translates[0].y;
+    Outpose[i]=m_cameraPoseX+m_ArucoMakerPose.translates[0].z;
+}
+
+if(m_ui_inIn.isNew()){//UIの入力受取
+    m_ui_inIn.read();
+
+
+ switch(m_ui_in.data){//UIからのデータを判別
+  case 1://UIがマーカー1を選択したら配列[1]の座標を変換RTCに伝達
+  m_convert_out.data=Outpose[1];
+    break;
+
+  case 2://UIがマーカー2を選択したら配列[2]の座標を変換RTCに伝達
+  m_convert_out.data=Outpose[2];
+    break;
+
+}
+
+    m_convert_outOut.write();
+
+    while(true){
+      if(m_convert_inIn.isNew()){//変換データが返ってくるまで待機
+        m_convert_inIn.read();
+        break;
+        }
+    }
+
+    m_arm_out.data=m_convert_in.data;//変換された座標をアームに送信
+    m_arm_outOut.write();
+}
+  
+  return RTC::RTC_OK;
+}
 
 
 //RTC::ReturnCode_t ManagerModule::onAborting(RTC::UniqueId /*ec_id*/)
