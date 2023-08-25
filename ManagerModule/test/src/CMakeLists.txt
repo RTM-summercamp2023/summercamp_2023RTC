@@ -1,6 +1,6 @@
 set(comp_srcs
    ManagerModuleTest.cpp
-   )
+   ArUcoSVC_impl.cpp )
 set(standalone_srcs ManagerModuleTestComp.cpp)
 
 if(${OPENRTM_VERSION_MAJOR} LESS 2)

@@ -16,6 +16,7 @@
 
 // Service implementation headers
 // <rtc-template block="service_impl_h">
+#include "ArUcoSVC_impl.h"
 
 // </rtc-template>
 
@@ -218,40 +219,40 @@ class ManagerModuleTest
 
   // DataInPort declaration
   // <rtc-template block="inport_declare">
-  RTC::TimedLong m_aruco_out;
+  Img::TimedCameraImage m_aruco_out;
   /*!
    */
-  RTC::InPort<RTC::TimedLong> m_aruco_outIn;
-  RTC::TimedLong m_arm_out;
+  RTC::InPort<Img::TimedCameraImage> m_aruco_outIn;
+  RTC::TimedPose3D m_arm_out;
   /*!
    */
-  RTC::InPort<RTC::TimedLong> m_arm_outIn;
-  RTC::TimedLong m_convert_out;
+  RTC::InPort<RTC::TimedPose3D> m_arm_outIn;
+  arUco::arUcoPose3D m_convert_out;
   /*!
    */
-  RTC::InPort<RTC::TimedLong> m_convert_outIn;
+  RTC::InPort<arUco::arUcoPose3D> m_convert_outIn;
   
   // </rtc-template>
 
 
   // DataOutPort declaration
   // <rtc-template block="outport_declare">
-  RTC::TimedLong m_image_in;
+  Img::TimedCameraImage m_image_in;
   /*!
    */
-  RTC::OutPort<RTC::TimedLong> m_image_inOut;
-  RTC::TimedLong m_aruco_in;
+  RTC::OutPort<Img::TimedCameraImage> m_image_inOut;
+  arUco::arUcoPose3D m_aruco_in;
   /*!
    */
-  RTC::OutPort<RTC::TimedLong> m_aruco_inOut;
-  RTC::TimedLong m_ui_in;
+  RTC::OutPort<arUco::arUcoPose3D> m_aruco_inOut;
+  RTC::TimedShort m_ui_in;
   /*!
    */
-  RTC::OutPort<RTC::TimedLong> m_ui_inOut;
-  RTC::TimedLong m_convert_in;
+  RTC::OutPort<RTC::TimedShort> m_ui_inOut;
+  RTC::TimedPose3D m_convert_in;
   /*!
    */
-  RTC::OutPort<RTC::TimedLong> m_convert_inOut;
+  RTC::OutPort<RTC::TimedPose3D> m_convert_inOut;
   
   // </rtc-template>
 

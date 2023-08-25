@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ManagerModule.dir/ManagerModule.cpp.o"
-  "CMakeFiles/ManagerModule.dir/ManagerModule.cpp.o.d"
+  "CMakeFiles/ManagerModule.dir/__/idl/ArUcoSkel.cpp.o"
   "ManagerModule.pdb"
   "ManagerModule.so"
 )
